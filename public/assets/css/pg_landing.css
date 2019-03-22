@@ -1,0 +1,280 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+/* html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+*/
+
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+
+/* General ------------------------------------- */
+/* ============================================= */
+
+body {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	
+	/* background-color: rgba(0, 0, 0, .7); */
+	margin: 0;
+	padding: 0;
+}
+
+div#home {
+    height: 99vh;
+}
+
+#particles-js {
+    height: 100%;
+}
+
+/* .overlay:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+} */
+
+
+
+/* Horizontal Placeholder Bar (for Dash Header) --------------- */
+/* ============================================================ */
+
+nav.navbar-fixed-top {
+	/* background-color: rgba(34, 140, 30, 0.65); */
+	border: none;
+}
+
+/* ----- dash left header (left panel) ---------- */
+nav #nav-bar-left-header {
+	background-color: rgba(40, 46, 52, 0.7);
+	/* display: -webkit-flex;
+	display: flex;
+	align-items: center; */
+	
+	height: 10px;
+}
+
+/* nav #nav-bar-left-header div div.navbar-brand h1 {
+	margin: 0;
+	font-size: 1em;
+	font-weight: 300;
+	color: #FFF;
+} */
+
+/* nav #nav-bar-left-header div div.navbar-brand h1 sub {
+	font-size: 1rem;
+} */
+
+/* nav #nav-bar-left-header a.header-refresh {
+	margin-left: auto;
+	color: #FFF;
+} */
+
+
+/* ----- dash right header -------------------- */
+nav #nav-bar-right-header {
+	/* padding: 0.4em;
+	padding-right: 1em; */
+	
+	background-color: rgba(34, 140, 30, 0.65);
+	
+	height: 10px;
+}
+
+/* nav #nav-bar-right-header {
+	float: right;
+} */
+
+@media(max-width:48em){
+	nav #nav-bar-right-header {
+		/* float: none; */
+		visibility: hidden;
+		/* display: none; */
+	}
+}
+
+
+/* ----- dash right header user profile & settings --------------- */
+/*
+#user-config {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	margin-right: 0.5em;
+	margin-left: 1em;
+}
+
+#user-config button.thumbnail {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#user-config img {
+	max-height: 2.3em;
+}
+*/
+
+
+
+/* HOME (log in & sign up) --------------------- */
+/* ============================================= */
+
+div#home {
+	/*
+	background-image: url(../imgs/landscape.jpg);
+	background-size: cover;
+	*/
+}
+
+div#home .headline-wrapper {
+	/* position: relative; */
+	/* padding-top: 22%; */
+	/* padding-bottom: 40%; */
+	
+	position: absolute;
+	left: 50%;
+	top: 48%;
+	
+	transform: translate(-50%, -50%);
+	/* color: white; */
+}
+
+div#home h1,
+div#home h2,
+div#home h3 {
+	color: rgba(34, 135, 34, 1);
+	margin: 0;
+	padding: 0;
+}
+
+div#home h1 {
+	font-size: 120px;
+	font-weight: bold;
+	
+	letter-spacing: -5.5px;
+	line-height: 80px;
+	
+	margin-bottom: 22px;
+}
+
+div#home h1 span:first-child {
+	font-size: 50px;
+}
+
+div#home h1 sub {
+	font-size: 60px;
+}
+
+/* div#home h1 > * {
+	color: black;
+	opacity: 0.6;
+} */
+
+div#home h2 {
+	margin-bottom: 4px;
+}
+
+div#home h3 {
+	margin-top: -4px;
+	margin-bottom: 22px;
+}
+
+div#home h2,
+div#home h3 {
+	font-size: 15px;
+}
+
+div#home ul li a.btn-info {
+	border: none;
+	opacity: 0.85;
+	
+	margin-left: 8px;
+	
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+div#home form button.btn-info {
+	opacity: 0.85;
+	
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+div#home .btn-success {
+	opacity: 0.9;
+}
+
+div#home ul li a.btn-success {
+	border: none;
+}
+
+
+div.input-group-addon {
+	border: 1px solid;
+	border-color: rgb(214, 214, 214);
+	border-radius: 5px;
+}
+
+form div.form-group input.form-control:focus {
+	border-color: #ccc;
+	-webkit-box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.15), 0 0 0 rgba(0, 0, 0, 1);
+			box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.15), 0 0 0 rgba(0, 0, 0, 1);
+}
+
+form.form-inline.hidden-element {
+	margin-top: 41px;
+	display: none;
+}
+
+
+@media(max-width:992px) {
+	form#log-in > div.form-group {
+		display: block;
+		margin-bottom: 5px;
+	}
+	
+	form#log-in > div.form-group:first-child input {
+		width: 200px;
+		margin: auto;
+	}
+	
+	form#log-in > div.form-group:nth-child(2) div.input-group {
+		width: 200px;
+		margin: auto;
+	}
+	
+	form#log-in > div.form-group:nth-child(2) input {
+		width: 169px;
+	}
+}
+
+
+
+
+
+
+
+
+
