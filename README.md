@@ -23,6 +23,5 @@ Build with:
 Some Notes:
 
 - Spent way too much time on the front-end.
-- Had trouble with the back-end of this. Back-end is not fully implemented
-- Used & using dummy values to test and present graphs
+- Had trouble with the back-end of this. Back-end is not fully implemented. Take a look at the code to see what was worked on. (Eventually used dummy values to test and present graphs.)
 - \*\* To view pages, open html files in /public. Html was used during development, because I was attempting for a single-page app. Eventually was to be refactored for Ejs for final push. But really there would not be much diff btwn Html & Ejs for this because it's a single-page app. \*\*
